@@ -29,7 +29,7 @@ init = os.path.join(os.path.dirname(__file__), 'gunicorn_color.py')
 version_line = list(filter(lambda l: l.startswith('VERSION'), open(init)))[0]
 VERSION = get_version(eval(version_line.split('=')[-1]))
 
-INSTALL_REQUIRES = ['termcolor']
+INSTALL_REQUIRES = ['rich']
 README = os.path.join(os.path.dirname(__file__), 'README.md')
 
 setup(
